@@ -102,8 +102,10 @@ D -->|Flatten Coordinates| E[Shapely Math];
 E -->|Calculate Area/Length| F[(SQLite Database)];
 ```
 
+
 ## 👨💻 Author
 
 **Akshay Parimi**
 * Software Engineer
-* [GitHub](https://github.com/akshayparimi18) | [LinkedIn](https://www.linkedin.com/in/akshay-parimi) | [Email](mailto:parimiakshay7@gmail.com)
+* [GitHub](https://github.com/akshayparimi18) | [LinkedIn](https://www.linkedin.com/in/akshay-parimi-4169bb26b)
+
