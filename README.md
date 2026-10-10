@@ -91,3 +91,13 @@ Access the interactive API documentation at: `http://127.0.0.1:8000/docs`
 1. **Implement Message Queues (Celery/RabbitMQ):** Offload file processing to background workers to prevent large multi-gigabyte Shapefiles from timing out the HTTP request.
 2. **Migrate to PostGIS:** Replace SQLite with a PostgreSQL/PostGIS database to enable complex spatial querying (e.g., bounding box intersections).
 3. **Cloud Storage Integration:** Modify the upload endpoint to stream files directly to AWS S3 rather than saving them to the local server's disk.
+
+## Architecture Diagram
+```mermaid
+graph TD;
+A[Client] -->|Upload KML/ZIP| B(FastAPI Router);
+B --> C{GeoPandas + Fiona};
+C -->|Extract Features & Detect CRS| D[PyProj Transformation];
+D -->|Flatten Coordinates| E[Shapely Math];
+E -->|Calculate Area/Length| F[(SQLite Database)];
+```
