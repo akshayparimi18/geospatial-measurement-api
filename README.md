@@ -101,3 +101,9 @@ C -->|Extract Features & Detect CRS| D[PyProj Transformation];
 D -->|Flatten Coordinates| E[Shapely Math];
 E -->|Calculate Area/Length| F[(SQLite Database)];
 ```
+
+## 👨💻 Author
+
+**Akshay Parimi**
+* Software Engineer
+* [GitHub](https://github.com/akshayparimi18) | [LinkedIn](https://www.linkedin.com/in/akshay-parimi) | [Email](mailto:parimiakshay7@gmail.com)
